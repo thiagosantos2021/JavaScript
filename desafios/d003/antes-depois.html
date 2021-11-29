@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Antecessor e Sucessor de um Número</title>
+    <style>
+        div {
+            font: normal 15pt arial;
+            background: rgba(22, 117, 124, 0.671);
+            color: white;
+            width: 200px;
+            height: 100px;
+            line-height: 50px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Antes e Depois</h1>
+    <div onclick="verificar()">
+        Antecessor e Sucessor
+    </div>
+    <script>
+        function verificar(){
+            var num = Number(window.prompt('Digite um número inteiro qualquer'))
+            window.alert(`Antes do número ${num}, temos o número ${num-1}.\nDepois do número ${num}, temos o número ${num+1}`)
+        }
+    </script>
+</body>
+</html>
